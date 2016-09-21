@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+    <package name="base" extends="struts-default" >
+     </package>
+     <package name="admin" extends="base" namespace="/admin">
+         <action name="adminAdd" class="com.iWen.survey.ctrl.AdminAction" method="adminAdd">
+            <result type="redirectAction" name="success">adminManage</result>
+         </action>
+         <action name="adminDel" class="com.iWen.survey.ctrl.AdminAction" method="adminDel">
+            <result type="redirectAction" name="success">adminManage</result>
+         </action>
+         <action name="EditAdmin" class="com.iWen.survey.ctrl.AdminAction" method="EditAdmin">
+            <result name="fail" type="redirect" >/admin/OpResult.jsp?op=default&amp;ret=false&amp;words=${message}</result>
+            <result name="success"  >/admin/AdminList.jsp</result>
+         </action>
+         <action name="adminManage" class="com.iWen.survey.ctrl.AdminAction" method="adminManage">
+            <result name="success">/admin/AdminList.jsp</result>
+             
+         </action>
+      </package>
+      <package name="config" extends="base" namespace="/config">
+         <action name="config" class="com.iWen.survey.ctrl.ConfigAction" method="config">
+            <result name="success" type="redirect">/admin/OpResult.jsp?op=SysConfig&amp;ret=true</result>
+             <result name="fail" type="redirect">/admin/OpResult.jsp?op=SysConfig&amp;ret=false</result>
+         </action>
+      
+      </package>
+      <package name="link" extends="base" namespace="/link">
+         <action name="AddLink" class="com.iWen.survey.ctrl.LinkAction" method="AddLink">
+            <result name="fail" type="redirect">/admin/OpResult.jsp?op=default&amp;ret=false&amp;words=${message}</result>
+            <result name="success"> /admin/FriendLinkAdmin.jsp</result>
+         </action>
+          <action name="DelLink" class="com.iWen.survey.ctrl.LinkAction" method="DelLink">
+            <result name="fail" type="redirect">/admin/OpResult.jsp?op=default&amp;ret=false&amp;words=${message}</result>
+            <result name="success"> /admin/FriendLinkAdmin.jsp</result>
+         </action>
+          <action name="EditLink" class="com.iWen.survey.ctrl.LinkAction" method="EditLink">
+            <result name="fail" type="redirect">/admin/OpResult.jsp?op=default&amp;ret=false&amp;words=${message}</result>
+            <result name="success"> /admin/FriendLinkAdmin.jsp</result>
+         </action>
+      </package>
+      
+      <package name="questionAction" extends="base" namespace="/question">
+         <action name="addQuestion" class="com.iWen.survey.ctrl.QuestionAction" method="AddQuestion">
+            <result name="fail" type="redirect">/admin/OpResult.jsp?op=Question&amp;ret=false</result>
+            <result name="success" type="redirect"> /admin/OpResult.jsp?op=Question&amp;ret=true&amp;sid=${sid}</result>
+         </action>
+         
+          <action name="delQuestion" class="com.iWen.survey.ctrl.QuestionAction" method="DelQuestion">
+            <result name="fail" type="redirect" >/admin/OpResult.jsp?op=Question&amp;ret=false</result>
+            <result name="success"> /admin/QuestionAdmin.jsp?sid=${sid}</result>
+         </action>
+          <action name="editQuestion" class="com.iWen.survey.ctrl.QuestionAction" method="EditQuestion">
+            <result name="fail" type="redirect" >/admin/OpResult.jsp?op=Question&amp;ret=false</result>
+            <result name="success" type="redirect" > /admin/OpResult.jsp?op=Question&amp;ret=true&amp;sid=${sid}</result>
+         </action>
+      </package>
+      
+       <package name="statisManage" extends="base" namespace="/statisManage">
+         <action name="delSheet" class="com.iWen.survey.ctrl.StatisManageAction" method="DelSheet">
+            <result name="success" type="redirect">/admin/ShowSheets.jsp?sid=${sid}</result>
+            <result name="fail" type="redirect" > /admin/OpResult.jsp?op=DelSheet&amp;ret=false</result>
+         </action>
+      </package>
+      
+       <package name="surveyManage" extends="base" namespace="/surveyManage">
+         <action name="addSurvey" class="com.iWen.survey.ctrl.SurveyManageAction" method="AddSurvey">
+            <result name="success" type="redirect">/admin/OpResult.jsp?op=SurveyAdd&amp;ret=true</result>
+            <result name="fail" type="redirect"> /admin/OpResult.jsp?op=SurveyAdd&amp;ret=false</result>
+         </action>
+          <action name="surveyAudi" class="com.iWen.survey.ctrl.SurveyManageAction" method="SurveyAudi">
+            <result name="success" >/admin/SurveyAudi.jsp</result>
+            <result name="fail" type="redirect" > /admin/OpResult.jsp?op=SurveyAudi&amp;ret=false</result>
+         </action>
+         <action name="editSurvey" class="com.iWen.survey.ctrl.SurveyManageAction" method="EditSurvey">
+            <result name="success" >/admin/SurveyAdmin.jsp</result>
+            <result name="fail" type="redirect" > /admin/OpResult.jsp?op=SurveyEdit&amp;ret=false</result>
+         </action>
+         
+           <action name="delSurvey" class="com.iWen.survey.ctrl.SurveyManageAction" method="DelSurvey">
+            <result name="success" >/admin/SurveyAdmin.jsp</result>
+            <result name="fail" type="redirect"> /admin/OpResult.jsp?op=SurveyDel&amp;ret=false</result>
+         </action>
+      </package>
+      
+      <package name="showSurvey" extends="base" namespace="/showSurvey">
+         <action name="showSurvey" class="com.iWen.survey.ctrl.ShowSurveyAction" method="ShowSurvey">
+            <result name="success" type="redirect">/OpResult.jsp?ret=true&amp;op=ShowSurvey</result>
+            <result name="fail" type="redirect">/OpResult.jsp?ret=false&amp;op=ShowSurvey</result>
+         </action>
+       
+      </package>
+    
+       <package name="user" extends="base" namespace="/user">
+         <action name="addUser" class="com.iWen.survey.ctrl.UserManageAction" method="addUser">
+            <result name="success" type="redirect">/OpResult.jsp?op=reg&amp;ret=true</result>
+            <result name="fail" type="redirect">/OpResult.jsp?op=reg&amp;ret=false</result>
+         </action>
+          <action name="userLogin" class="com.iWen.survey.ctrl.UserManageAction" method="userLogin">
+            <result name="success" type="redirect" >/OpResult.jsp?op=login&amp;ret=true</result>
+            <result name="fail" type="redirect" > /OpResult.jsp?op=login&amp;ret=false</result>
+         </action>
+      </package>
+      
+</struts>

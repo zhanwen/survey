@@ -1,0 +1,379 @@
+/* - - - - - - CSS Document - - - - - - - - -
+
+Title : Global style sheet for client-side web development
+Author : Cody Lindley 
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+* {padding: 0; margin: 0;} 
+
+html, body {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+background:#ffffff;
+text-align:center;
+}
+
+body{font: 62.5%/1.4 Arial, Helvetica, sans-serif;}
+
+/* ----- base links -----*/
+a:link, .subNav a:link {color: #4A8EBC;text-decoration:underline;}
+a:visited, .subNav a:visited {color: #4A8EBC;text-decoration:underline;}
+a:hover, .subNav a:hover {color: #316080;text-decoration:underline;}
+a:active, .subNav a:active {color: #4A8EBC;text-decoration:underline;}
+a:focus, .subNav a:focus{color: #4A8EBC; outline:none;text-decoration:underline;}
+
+/* ----- next base links -----*/
+#tag a:link, #overview a:link, #examples a:link{color: #FFFCD1;}
+#tag a:visited, #overview a:visited, #examples a:visited{color: #FFFCD1;}
+#tag a:hover, #overview a:hover, #examples a:hover{color: #F4C20A;}
+#tag a:active, #overview a:active, #examples a:active{color: #FFFCD1;}
+#tag a:focus, #overview a:focus, #examples a:focus{color: #FFFCD1; outline:none;}
+
+/* ----- head tags ----- */
+
+h1{
+	font-size:4em;
+	letter-spacing: -3px;
+	margin-top:30px;
+}
+
+h1 span{color:#F4C20A}
+
+h2{font-size:2em;}
+h2 a:link, h2 a:visited, h2 a:hover, h2 a:active{
+	text-decoration:none;
+	color:#333333;
+}
+
+.subNav{
+font-size:0.5em;
+font-weight:normal;
+color:#CCCCCC;
+}
+
+h2{text-align:left;padding-bottom:1px;margin-top:30px;clear:both}
+
+h5{text-align:left;font-size:1.1em; padding:5px 15px 0 15px;}
+
+.header{float:left;width:200px;display:block}
+
+.lineDivide{border-bottom: 1px dotted #333333;height:1px;margin-bottom:20px; clear:both; line-height:1px;}
+
+.lineDivideSolid{border-bottom: 2px solid #ccc;height:1px;margin-bottom:20px; clear:both; line-height:1px;}
+
+#pageContent{
+margin:0 auto;
+width:500px;
+height:100%;
+}
+
+#tag{
+background-color:#464548;
+font-size:1.1em;
+color:#F4F4F4;
+padding:3px 0 5px 0;
+}
+
+#description{
+background-color:#F4F4F4;
+margin:1px 0px;
+font-size:2.2em;
+font-weight:normal;
+padding:15px;
+color:#6E6E6E;
+}
+
+.roundbox{
+background: #6E6E6E;
+width:100%;
+margin-bottom:20px;
+color:#fff;
+text-align:left;
+clear:both;
+}
+
+.roundbox h3{
+font-size:1.55em;
+padding: 15px 15px 10px 15px;
+border-bottom: 1px dotted #e8e8e8;
+margin-bottom:10px;
+clear:both;
+}
+
+.roundbox p{
+font-size:1.5em;
+padding: 0px 15px 15px 16px;
+}
+
+.roundbox ul, .anchor ul{
+font-size:1.5em;
+padding: 0px 15px 15px 16px;
+}
+
+.roundbox ul li, .anchor ul li{
+	list-style: circle inside;
+	padding:2px 0;
+}
+
+p.changeDate{
+padding: 0px 15px 0px 16px;
+font-size:1.1em;
+font-weight:bold;
+}
+
+#donate p, #qa p, #support p{
+font-size:1.5em;
+padding: 0px 15px 15px 16px;
+text-align:left;
+}
+
+/* tabs */
+.anchors {
+    list-style: none;
+    margin:0 0 0 10px;
+}
+
+.anchors li {
+    float: left;
+    margin: 0 2px 0 0;
+}
+
+.anchors a {
+    display: block;
+    padding: 1px 9px 2px 9px;
+    text-decoration: none;
+	background: #CE1400;
+	border-top:2px solid #fff;
+	font-size:1.55em;
+}
+
+div.greyTabs .anchors a{
+	background: #868686;
+}
+
+.anchors .on a {
+    font-weight: bold;
+	border-bottom:2px solid #970F00;
+	border-top:2px solid #970F00;
+}
+
+div.greyTabs .anchors .on a{
+	border-bottom:2px solid #6E6E6E;
+	border-top:2px solid #6E6E6E;
+}
+
+.anchors .on a, .anchors .on a:hover, .anchor, .anchors a:focus, .anchors a:active {
+	background: #970F00;
+	border-top:2px solid #970F00;
+	outline: none; /* @ Firefox 1.5, remove ugly dotted border */
+	overflow:hidden;
+}
+
+div.greyTabs .anchors .on a, div.greyTabs .anchors .on a:hover, div.greyTabs .anchor, div.greyTabs .anchors a:focus, div.greyTabs .anchors a:active {
+	background: #6E6E6E;
+	border-top:2px solid #6E6E6E;
+}
+
+.anchors a:hover{
+	background: #FF3E28;
+	border-top:2px solid #FF3E28;
+}
+
+div.greyTabs .anchors a:hover{
+	background: #4E4E4E;
+	border-top:2px solid #4E4E4E;
+}
+
+.anchors .on a:link, .anchors .on a:visited { /* @ Opera, use pseudo classes otherwise it confuses cursor... */
+    cursor: text;
+}
+.anchors a:hover, .anchors a:focus, .anchors a:active {
+    cursor: pointer;
+}
+.anchor {
+	clear:both;
+	display:none;
+	margin-bottom:20px;
+	width:100%;
+	color:#FFFFFF;
+	text-align:left;
+}
+
+.anchor p {
+text-align:left;
+padding:5px 15px 15px 15px;
+font-size:1.5em;
+color:#FFFFFF;
+}
+
+#navigation{
+clear:both;
+list-style:none;
+text-align:center;
+border-top:2px solid #ccc;
+}
+
+#navigation li{
+display: inline;
+list-style-type: none;
+padding:7px 20px 7px 15px;
+*padding-top:2px;
+_padding-top:7px;
+line-height:30px;
+font-size:1.6em;
+}
+
+* html #navigation li{
+padding:3px 13px 7px 15px;
+}
+
+#navigation li.divide{
+border-right:2px solid #ccc;
+}
+
+#navigation li a{
+margin-top:5px;
+}
+
+#qa dl dd{
+text-align:left;
+margin-bottom:5px;
+margin-top:10px;
+font-size:1.5em;
+}
+
+#qa dl {
+margin:0 15px;
+border-bottom: 1px dotted #ccc;
+padding-bottom:10px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+pre.tabscode {
+border: 1px solid #ccc;
+margin: 15px;
+padding: 1em;
+background-color: #fff;
+overflow: auto;
+height:300px;
+text-align:left;
+}
+
+* html pre.tabscode{width:90%;}
+
+code
+{
+color: #333333;
+font-size:1.4em;
+line-height: 1.4;
+}
+
+pre.normal {
+margin: 0px 15px 15px 15px;
+padding: 1em;
+overflow: auto;
+background-color: #ccc;
+}
+
+* html pre.normal{width:90%;}
+
+pre.exampleCode {
+margin: 5px 15px 10px 15px;
+padding: .5em;
+overflow: auto;
+background-color: #CE1400;
+}
+
+pre.exampleCode code {
+color:#FFFFFF;
+font-size:1em;
+}
+
+.javascript .comment {color : green;}
+.javascript .string {color : red;}
+.javascript .keywords {color : navy;font-weight:bold;}
+.javascript .global {color: #009900;}
+.javascript .brackets{color : navy;font-weight:bold;}
+
+.css .comment {color : gray;}
+.css .properties {color : navy;}
+.css .selectors {color : maroon;}
+.css .units {color :red;}
+.css .urls {color :green;}
+
+.html .tag {color : purple;font-weight : bold;}
+.html .comment {color : gray;font-style: italic;}
+.html .string {color : navy;}
+.html .doctype {color : teal;}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.toggleBtn{
+display:block;
+height:11px;
+width:11px;
+margin-top:13px;
+line-height:13px;
+float:right;
+background-color:#fff;
+font-weight:normal;
+color:#F4C20A;
+text-align:right;
+}
+
+h2 a.toggleBtn:link, h2 a.toggleBtn:visited, h2 a.toggleBtn:active{
+color:#F4C20A;
+}
+
+h2 a.toggleBtn:hover{
+color:#CE1400;
+}
+
+
+* html .toggleBtn{
+height:1px;
+line-height:11px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.BTT a{
+font-size:1.1em;
+}
+
+#overview a.BTT:link, #overview a.BTT:visited, #overview a.BTT:active, #examples a.BTT:link, #examples a.BTT:visited, #examples a.BTT:active{
+	color:#4A8EBC;
+}
+
+#overview a.BTT:hover, #examples a.BTT:hover{
+color:#316080;
+}
+
+
+#credits{
+margin:50px 0 500px 0;
+font-size:1.1em;
+}
+
+#credits p{
+padding:0 15px 15px 15px;
+}
+
+.hfivepadding{
+margin-top:5px;
+}
+
+.answer{
+color:#CE1400;
+}
+
+#examples img{
+border: 2px solid #fff;
+}
+
+.callout{
+	color: #FFFFFF;
+	border-bottom:2px dotted #F4C20A;
+}

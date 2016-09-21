@@ -1,0 +1,273 @@
+@charset "utf-8";
+body,td,th {
+	margin-top:0px;
+	font-size: 12px;
+	text-align:center;
+}
+a {
+	font-size: 12px;
+}
+a:link {
+	color: #333333;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #333333;
+}
+a:hover {
+	text-decoration: underline;
+	color: #4E667B;
+}
+a:active {
+	text-decoration: none;
+}
+input,textarea{
+	border:1px solid #ccc;
+}
+img{
+	border:0px;
+}
+#Survey_IPList{
+	width:223px;
+}
+#head{
+	width:770px;
+	height:180px;
+	border:1px solid #ebebeb;
+	background-image:url(../images/head1.gif);
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #ebebeb;
+	position: relative;
+}
+
+#head a{
+	font-size: 60px;
+	color: #ffffff;
+}
+#head h1 {
+	padding-right: 100px;
+}
+#head p{
+	font-size: 20px;
+	color: #ffffff;
+	
+}
+#head span {
+	position:absolute;
+    top:0;
+    left:0;
+}
+
+#surveyBox,#indexFriend{
+	width:770px;
+	margin-top:5px;
+}
+#main{
+	width:772px;
+	margin-top:5px;
+}
+
+#indexFriend{
+	border:1px solid #ebebeb;
+}
+#indexFriend .main{
+	height:55px;
+}
+
+#indexFriend .friendBox{
+	float:left;
+	width:88px;
+	line-style:none; /*for IE7,hide the black dot of list*/
+	list-style-type:none;/*for IE8 & FF3 ,hide the black dot of list*/
+	margin-top:10px;
+	margin-right:3px;
+}
+
+.list-item {   margin:0; padding:0; list-style-position:inside;}
+.list-item li { margin-left:4px; line-height:25px; color:#fff; font-weight:bold; font-size:12px; background:url(../images/list_serial_bg.gif) no-repeat left 50%; padding-left:4px; }
+.list-item li a { font-weight:normal;  }
+
+
+
+#banner{
+	width:770px;
+	border:1px solid #ebebeb;
+	margin-top:5px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#banner .text{
+	background:#ebebeb;
+	height:25px;
+	line-height:25px;
+	padding-left:1em;
+	border:1px #FFF solid;
+	text-align:left;
+}
+#box{
+	width:770px;
+	margin-top:5px;
+	margin-bottom:5px;
+	border:1px solid #D2E4FC;
+	margin-left:auto; 
+	margin-right:auto;
+}
+.guestBookContetn{
+	text-align:left;
+	padding:5px;
+	padding-bottom:15px;
+}
+.tdLeft{
+	text-align:left;
+	padding-left:6px;
+}
+.closeW{
+	border-top:1px dotted #A7CAFA;
+	height:30px;
+}
+#guestBook{
+	border:1px dotted #A7CAFA;
+	margin:5px;
+}
+#guestBook .touXiang{
+	padding-top:3px;
+	padding-bottom:3px;
+	border-right:1px dotted #A7CAFA;
+}
+#guestBook .info{
+	padding-left:6px;
+	text-align:left;
+	border-top:1px solid #A7CAFA;
+}
+#main {
+	height:250px;
+}
+#main_1{
+	width:565px;
+	border:1px solid #ebebeb;
+	float:left;
+	margin-right:5px;
+	padding-bottom:5px;
+}
+#main_2{
+	width:198px;
+	border:1px solid #ebebeb;
+	float:left;
+}
+.head_new_flash{
+	margin-top:5px;
+	margin-left:3px;
+	float:left;
+}
+.head_new_list{
+	margin-top:5px;
+	float:left;
+	text-align:left;
+}
+.li{
+	height:25px;
+	
+	line-height:25px;
+}
+
+.title{
+	background:#ebebeb;
+	height:25px;
+	line-height:25px;
+	padding-left:1em;
+	border:1px #FFF solid;
+	text-align:left;
+	
+}
+.paihang_content{
+	text-align:left;
+	height:220px;
+}
+#clar{
+	clear:none;
+}
+#bottom{
+	margin-top:5px;
+	padding-top:12px;
+	line-height:30px;
+	width:770px;
+	height:70px;
+	border:1px solid #ebebeb;
+	text-align:center;
+	margin-left:auto; 
+	margin-right:auto;
+}
+#surveyBox{
+	border:1px solid #D2E4FC;
+	text-align:center;
+	margin-left:auto; 
+	margin-right:auto;
+}
+#surveyBox .center{
+	width:500px;
+	height:auto;
+	text-align:left;
+	margin-left:auto; 
+	margin-right:auto;
+}
+#surveyBox .name{
+    padding:10px;
+	text-align:center;
+	font-size:18px;
+}
+#surveyBox .desc{
+    padding:10px;
+	text-align:left;
+	font-size:12px;
+}
+#surveyBox .Question_list {
+    width:500px;
+	height:auto;
+}
+.Question_title{
+    list-style:none;
+}
+#Question_Tdtz_show {
+    width:500px;
+	height:auto;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+#surveyBox .button{
+	width:580px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+}
+#surveyBox .button input{
+	margin:8px;
+}
+#surveyBox .backindex{
+	width:60px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+}
+
+.Question_item li{
+    list-style:none;
+}
+.Question_item_menu{
+    padding-left:30px;
+}
+#bottom_pagebox{
+	line-height:20px;
+}
+#passwordBox{
+	width:300px;
+	height:200px;
+	margin-top:180px;
+	margin-left:30px;
+	border:1px solid #D2E4FC;
+}
+.middle{
+	margin-left:auto;
+	margin-right:auto;
+}

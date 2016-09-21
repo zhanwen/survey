@@ -1,0 +1,140 @@
+@charset "utf-8";
+<!--
+body,td,th {
+	font-size: 12px;
+}
+body {
+	SCROLLBAR-FACE-COLOR: #ecf3fb; FONT-SIZE: 9pt;
+	SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; 
+	SCROLLBAR-SHADOW-COLOR: #cccccc; COLOR: #000000;
+	SCROLLBAR-3DLIGHT-COLOR: buttonface; 
+	SCROLLBAR-ARROW-COLOR: #000000; 
+	SCROLLBAR-TRACK-COLOR: #eaf0f5;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	SCROLLBAR-DARKSHADOW-COLOR: #ffffff; TEXT-DECORATION: none
+}
+img{
+	border:0px;
+}
+#loginForm{
+	width:300px;
+	height:200px;
+	border:1px solid #D2E4FC;
+	margin-top:20%;
+	margin-left:350px;
+	padding-top:60px;
+	padding-left:50px;
+}
+#loginForm_button{
+	margin-top:12px;
+	padding-left:60px;
+}
+#Survey_IPList{
+	width:223px;
+}
+input,textarea{
+	border:1px solid #ccc;
+}
+a {
+	font-size: 12px;
+	display:compact;
+}
+a:link {
+	color: #333333;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #333333;
+}
+a:hover {
+	text-decoration: underline;
+	color: #4E667B;
+}
+a:active {
+	text-decoration: none;
+}
+
+.table {
+	BACKGROUND: #ffffff; WIDTH:100%;
+}
+.table TR TH {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; COLOR: #333333; LINE-HEIGHT: 24px; PADDING-TOP: 0px; HEIGHT: 24px;
+	text-align:left;BACKGROUND: #C4D8ED;
+}
+.table TR TD {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 24px; PADDING-TOP: 0px; HEIGHT: 24px
+}
+.table TR.hover {
+	BACKGROUND: #EEF7FD;
+}
+#b0 {
+	CLEAR: both; BORDER: #898c95 1px solid; DISPLAY: block; BACKGROUND: #ffffff;TEXT-ALIGN: left;
+}
+.Survey_title{
+	text-align:center;
+}
+#Question_add_content{
+	padding-left:15px;
+}
+#Question_add_content input{
+	margin:3px;
+
+}
+.large{
+	text-align:center;
+	font-size:24px;
+	float:inherit;
+}
+#button input{
+	font:normal 12px/120% Verdana,'宋体';height:18px;
+	border-left:1px #ced4e2 solid;
+	border-top:1px #ced4e2 solid;
+	border-right:1px #888888 solid;
+	border-bottom:1px #888888 solid;
+	background:	#dddddd;
+	margin-left:10px;
+	margin-right:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.R{
+color:#FF0000;
+}
+.a3{
+	width:30;border:0;
+	text-align:center
+}
+input{
+	color:navy;
+	font:normal 12px/120% Tahoma,Verdana,sans-serif;
+	 height:19px;
+}
+input,textarea,hr {
+	color:navy;
+	font:normal 12px/120% Verdana,sans-serif;
+	padding-left:2px;
+	padding-right:2px;
+	border:1px #8AB3DB solid;
+}
+#Quesstion_add_page {
+	padding-left:12px;
+}
+#hidden_up{
+	display:block; 
+	width:40px; 
+	height:20px; 
+	background:#000000;
+}
+
+#question_tz{
+	width:450px;
+	border:1px solid #8AB3DB;
+	position:absolute;
+	top:17px;
+	left:187px;
+	z-index:9999;
+	text-align:center;
+	overflow: visible;
+	visibility: hidden;
+}
