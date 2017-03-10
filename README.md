@@ -10,7 +10,7 @@ iWen问卷调查系统
 
 2、配置数据库  
 
-　　打开数据库软件Navicat for Mysql，创建数据库，数据库名为diaocha
+　　打开数据库软件Navicat for Mysql，创建数据库，数据库名为survey
 　　创建好之后，点击数据库，->点击查询->创建查询，将调查问卷目录下的sql文件，用编辑器打开，将其内容复制到刚才的创建查询中，
 点击运行，数据库就创建好了。  
 
@@ -26,3 +26,5 @@ iWen问卷调查系统
 
 　　在eclipse中点击Windows->preferences->server->Runtime Environment
 　　点击右边的Add按钮进行添加一个服务器。选择tomcat7，然后next，选择tomcat的根目录
+
+5、要获得sql请扫描下方，这是对我的付出一种小回报。之后加我QQ，即可。
