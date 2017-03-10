@@ -27,5 +27,5 @@ iWen问卷调查系统
 　　在eclipse中点击Windows->preferences->server->Runtime Environment
 　　点击右边的Add按钮进行添加一个服务器。选择tomcat7，然后next，选择tomcat的根目录
 
-5、要获得sql请扫描下方，这是对我的付出一种小回报。之后加我QQ，即可。
+5、要获得sql请扫描下方，这是对我的付出一种小回报。之后加我QQ，即可。  
 ![](1.png)
