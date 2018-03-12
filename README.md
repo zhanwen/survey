@@ -17,7 +17,7 @@ iWen问卷调查系统
 
 　　直接将项目运行在已有的服务器上，即可。若未配置，见步骤4。
 若服务器端口自己改了，就用自己改的端口，否则默认8080
-　　在浏览器中访问http://localhost:8080/diaocha/index.jsp即可。  
+　　在浏览器中访问http://localhost:8080/survey/index.jsp即可。  
 
 #### 4、配置tomcat服务器。  
 
