@@ -1,8 +1,11 @@
 # Survey
 iWen问卷调查系统  
 
-项目部署
-------------------------------------  
+项目部署   
+
+------------------------------------    
+
+项目环境：jdk1.8 
 #### 1、打开eclipse，将项目导入。  
 
 　　导入步骤1、File->import->General->Existing projects into Worksapce->选择项目的根目录  
