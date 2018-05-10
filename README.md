@@ -39,6 +39,9 @@ iWen问卷调查系统
 #### 问卷调查结果可视化统计
 ![](images/itemcount.jpg)
 
-注：要获得sql请扫描下方，这是对我付出的一种小回报，谢谢。如果项目有问题，我会帮助你跑通。之后加我QQ：1106002609，即可。  
+注：要获得sql请扫描下方，这是对我付出的一种小回报，谢谢。如果项目有问题，我会帮助你跑通。
+
 <img src="images/1.png" width="150" height="150" alt="pay check"/>
 
+之后可以通过扫描下方的微信联系到我，或者加我QQ：1106002609也可以。  
+<img src="images/weixin.png" width="150" height="150" alt="pay check"/>  
